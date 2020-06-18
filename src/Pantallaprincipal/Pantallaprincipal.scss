@@ -1,0 +1,104 @@
+.PantallaPrincipal {
+
+    & .filterActive {
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+
+        & .filterContain {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.76);
+            width: 100vw;
+            padding: 2rem 1rem 0 2rem;
+            color: white;
+            font-weight: bold;
+            animation: menuFadeIn 1s;
+            height: 250vh;
+
+            @keyframes menuFadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            & .cerrarFiltro {
+                justify-content: flex-end;
+                padding-right: 2rem;
+            }
+
+            & .titleFiltro {
+                font-weight: bold;
+                color: #FF881C;
+            }
+
+            & .alergiaItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & .alergiaInput input {
+                    margin: 20px;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                }
+            }
+
+            & .filtroButton {
+                justify-content: center;
+                padding: 1rem 0 4rem 0;
+
+                & button {
+                    font-weight: bold;
+                    background-color: #FF881C;
+                    border: 1px solid #FFFFFF;
+                    color: white;
+                    padding: 5px 70px;
+                    border-radius: 50px;
+                    font-weight: bold;
+
+                    @media screen and(max-width: '767px') {
+                        padding: 5px 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .searchAndFilter {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        & .filter {
+            margin: 1rem;
+
+            & .filterBorder {
+                border: 3px solid #FF881C;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+
+        & .search {
+            & input {
+                margin-right: 5px;
+                background-color: #ffffffa8;
+                border-radius: 50px;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                width: 30vw;
+
+                @media screen and(max-width: '767px') {
+                    width: 56vw;
+                }
+            }
+        }
+    }
+
+}

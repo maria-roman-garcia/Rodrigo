@@ -1,0 +1,13 @@
+.Opiniones{
+    margin-left: 20px;
+    & .opinionCard{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-left: 4px solid #FF881C;
+
+        & .nombre{
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.Galeria {
+    & .displayGaleria {
+        justify-content: space-around;
+
+        & .galeriaImagen {
+            height: 18rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            margin: 20px 0;
+        }
+    }
+
+}

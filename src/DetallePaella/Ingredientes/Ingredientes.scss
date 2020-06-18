@@ -1,0 +1,104 @@
+.justifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.Ingredientes {
+    & .ingredientesBox {
+        width: 90vw;
+        border: 1px solid #FF881C;
+        border-radius: 20px;
+        margin: 0.5rem;
+
+        & .textoVerIngredientes {
+            margin: 0;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        & .ingredientesList {
+            padding: 1rem 0 0 2rem;
+        }
+    }
+
+    & .alergenosRow {
+        justify-content: center;
+
+        & .alergenos {
+            & .alergenosBox {
+                font-weight: bold;
+                color: #FF881C;
+                border: 1px solid #FF881C;
+                padding: 1rem;
+                width: 90vw;
+                border-radius: 20px;
+                margin: 0.5rem;
+
+                & .alergenosItems {
+
+                    & img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .totalesPersonasPaellas {
+        padding: 0 4rem;
+        @media screen and(max-width: '767px') {
+            padding: 0 1rem;
+        }
+
+        & .numeroPersonasText {
+            color: #FF881C;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        & .numeroPaellasText {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        & .spaceAround {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            & .total {
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 30px;
+                width: 30vw;
+                text-align: center;
+            }
+        }
+    }
+
+    & .totalPrice {
+        justify-content: flex-end;
+        padding: 2rem 1rem 2rem 0;
+    }
+
+    & .rowPedido {
+        justify-content: flex-end;
+        padding: 1rem 0;
+
+        & .pedido {
+            background-color: #FF881C;
+            width: 50%;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            & p {
+                margin: 0;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}

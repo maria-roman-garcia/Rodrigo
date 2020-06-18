@@ -1,0 +1,63 @@
+.withoutPadding {
+    padding: 0 !important;
+}
+
+.InfoCard {
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 236, 219, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 236, 219, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 236, 219, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 236, 219, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 236, 219, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 236, 219, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffecdb', GradientType=1);
+    margin: 2rem 0 1rem 4rem;
+    padding: 20px 0 20px 30px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media screen and(max-width: '767px') {
+        margin: 1rem 0 1rem 1rem;
+        padding: 20px 0;
+    }
+
+    & .textCard {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+
+        & .paellaTitle {
+            color: #EB7C1E;
+            font-weight: bold;
+        }
+
+        & .paellaButton {
+            font-weight: bold;
+            background-color: #FF881C;
+            border: 1px solid #FFFFFF;
+            color: white;
+            padding: 5px 70px;
+            border-radius: 50px;
+            font-weight: bold;
+            @media screen and(max-width: '767px') {
+                padding: 5px 8px;
+            }
+        }
+    }
+
+    & .imgCard {
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        & img {
+            position: relative;
+            right: -7rem;
+            height: 24rem;
+
+            @media screen and(max-width: '767px') {
+                height: 15rem;
+            }
+        }
+    }
+}

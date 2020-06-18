@@ -1,0 +1,45 @@
+.Menu {
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    & .logoRodrigo {
+        margin-left: 1rem;
+        width: 10rem;
+    }
+
+    & .menuIcon {
+        margin-right: 1rem;
+    }
+
+    & .Menu_hamburger {
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        width: 100vw;
+
+        & .Menu_hamburger_sections {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.76);
+            width: 100vw;
+            padding: 5rem 0 0 2rem;
+            color: white;
+            font-weight: bold;
+            animation: menuFadeIn 1s;
+
+            @keyframes menuFadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
